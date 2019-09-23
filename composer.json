@@ -1,5 +1,5 @@
 {
-    "name": "sphinx/search",
+    "name": "lib_sphinx/search",
     "description": "Search system Sphinx",
     "license": "MIT",
     "version": "1.0.0",
