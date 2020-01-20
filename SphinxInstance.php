@@ -28,7 +28,7 @@ class SphinxInstance extends SphinxClient
         $this->indexes = config('sphinxsearch.indexes') ?: [];
     }
 
-    public function get($query, $index = '*', $comment = '', $trashed = false, $columns = ['*'])
+    public function get($query, $index = '*', $comment = '', $trashed = false, $columns = ['*'],&$totalCount=0)
     {
         $r = $this->query($query, $index, $comment);
         $totalCount = (int)$r['total_found'];
